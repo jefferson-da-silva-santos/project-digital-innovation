@@ -17,7 +17,6 @@
 }
 
 @media screen and (max-width: 890px) {
-
   .main__text {
     text-align: center;
   }
@@ -74,9 +73,34 @@
 }
 
 @media screen and (max-width: 682px) {
+  .texts-option-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .texts-option-login__form {
+    align-items: center;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .option-login {
+    min-height: 90%;
+  }
+
+  .textOption {
+    text-align: center;
+  }
 
   .main__text {
     font-size: 1.2em;
+  }
+
+  .texts-option-login__social {
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -99,8 +123,8 @@
 
   .header__title {
     font-size: 2em;
-    padding: .5em 1em;
-}
+    padding: 0.5em 1em;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -129,7 +153,7 @@
   .container {
     grid-template-rows: 2fr 8fr 1fr;
     padding: 1em;
-}
+  }
 }
 
 @media screen and (max-width: 418px) {
@@ -139,10 +163,14 @@
 
   .main__text {
     font-size: 1.05em;
-}
+  }
 }
 
 @media screen and (max-width: 362px) {
+  .email-input-login {
+    width: 100%;
+  }
+
   .service_card {
     min-height: auto;
     width: 95%;
@@ -165,5 +193,5 @@
 
   .main__text {
     font-size: 1em;
-}
+  }
 }
