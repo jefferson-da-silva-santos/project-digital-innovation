@@ -4,12 +4,6 @@
   }
 }
 
-@media screen and (max-width: 1021px){
-  .main__text {
-    max-width: 100%;
-  }
-}
-
 @media screen and (max-width: 942px) {
   .service_card {
     min-height: 23em;
@@ -23,6 +17,15 @@
 }
 
 @media screen and (max-width: 890px) {
+
+  .main__text {
+    text-align: center;
+  }
+
+  .header {
+    padding: 0;
+  }
+
   .groupCards_header_service {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -62,7 +65,7 @@
 
 @media screen and (max-width: 781px) {
   .header__title {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 
   .main__text {
@@ -70,20 +73,34 @@
   }
 }
 
-@media screen and (max-width: 658px) {
-  .header__title {
-    font-size: 2.5em;
-  }
+@media screen and (max-width: 682px) {
 
   .main__text {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 632px) {
+  .header__title {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .header__title {
+    font-size: 2.3em;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .container {
+    grid-template-rows: 2fr 8fr 1fr;
+  }
+
   .header__title {
     font-size: 2em;
-  }
+    padding: .5em 1em;
+}
 }
 
 @media screen and (max-width: 420px) {
@@ -115,6 +132,16 @@
 }
 }
 
+@media screen and (max-width: 418px) {
+  .header__title {
+    font-size: 1.7em;
+  }
+
+  .main__text {
+    font-size: 1.05em;
+}
+}
+
 @media screen and (max-width: 362px) {
   .service_card {
     min-height: auto;
@@ -125,12 +152,18 @@
   .title {
     font-size: 1.9em;
   }
+
+  .header__title {
+    font-size: 1.5em;
+  }
 }
 
-@media screen and (max-width: 36px) {
-  .service_card {
-    min-height: auto;
-    width: 100%;
-    margin: auto;
+@media screen and (max-width: 324px) {
+  .header__title {
+    font-size: 1.3em;
   }
+
+  .main__text {
+    font-size: 1em;
+}
 }
