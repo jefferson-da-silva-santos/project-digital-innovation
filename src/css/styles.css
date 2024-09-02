@@ -4,6 +4,8 @@
   --color-primary: #101728;
   --cor-clara-gradient: #1695FE;
   --cor-escura-gradient: #2734C8;
+
+  --width-global: 1200px
 }
 
 * {
@@ -53,7 +55,7 @@
 
 .nav {
   display: flex;
-  max-width: 1200px;
+  max-width: var(--width-global);
   justify-content: space-between;
   margin: auto;
   align-items: center;
@@ -106,7 +108,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: var(--width-global);
   margin: auto;
   align-items: start;
   gap: 1em;
@@ -164,3 +166,46 @@
 
 
 
+/* ESTILOS QUEM SOMOS */
+
+.container {
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 6fr 1fr;
+  padding: 2em;
+}
+
+.header {
+  display: flex;
+}
+
+.header__title {
+  font-size: 3.5em;
+  background-image: linear-gradient(to left, var(--cor-clara-gradient), var(--cor-escura-gradient));
+  padding: 0 1.5em;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.main {
+  max-width: var(--width-global);
+  margin: auto;
+  padding-bottom: 2em;
+}
+
+.main__text {
+  font-size: 1.4em;
+  text-align: justify;
+  font-weight: 300;
+  max-width: 43em;
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid white;
+}
