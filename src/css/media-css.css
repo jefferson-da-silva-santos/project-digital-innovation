@@ -1,0 +1,99 @@
+@media screen and (max-width: 1154px) {
+  .service_card {
+    min-height: 21em;
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .service_card {
+    min-height: 23em;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .service_card {
+    min-height: 25em;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .groupCards_header_service {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+  }
+
+  .service_card {
+    min-height: 20em;
+    width: 20em;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .list-menus {
+    display: none;
+  }
+
+  .group-menu {
+    display: grid;
+  }
+
+  .header {
+    align-items: center;
+    padding-bottom: 1em;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .service_card {
+    min-height: auto;
+    width: 85%;
+    margin: auto;
+  }
+  .header {
+    padding: 0 1em;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .title-card {
+    font-size: 1.3em;
+    width: 12em;
+  }
+
+  .text-card {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .service_card {
+    min-height: auto;
+    width: 95%;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 36px) {
+  .service_card {
+    min-height: auto;
+    width: 100%;
+    margin: auto;
+  }
+}
