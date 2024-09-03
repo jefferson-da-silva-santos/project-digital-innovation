@@ -388,7 +388,7 @@ strong {
 
 .group-form-image {
   display: grid;
-  grid-template-columns: 1fr 31em;
+  grid-template-columns: 23em 31em;
   grid-template-rows: 1fr;
   background-color: var(--color-primary);
   border-radius: 10px;
