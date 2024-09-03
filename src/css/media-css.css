@@ -21,6 +21,10 @@
     text-align: center;
   }
 
+  .group-form-image {
+    grid-template-columns: 1fr 23em;
+  }
+
   .header {
     padding: 0;
   }
@@ -63,6 +67,10 @@
 }
 
 @media screen and (max-width: 781px) {
+  .group-form-image {
+    grid-template-columns: 1fr;
+  }
+
   .header__title {
     font-size: 2.8em;
   }
@@ -128,6 +136,35 @@
 }
 
 @media screen and (max-width: 420px) {
+  .group-form-image {
+    grid-template-columns: 20em;
+  }
+
+  .group-password-inputs :nth-child(1) {
+    width: 13.6em;
+  }
+
+  .title-form {
+    font-size: 1.45em;
+  }
+
+  .subtitle-form {
+    font-size: 0.85em;
+  }
+
+  .group-inputs-form-cadastro :nth-child(4) {
+    font-size: 0.85em;
+    height: 3em;
+  }
+
+  .text-form {
+    font-size: 0.7em;
+  }
+
+  .group-form-image__form img {
+    width: 15em;
+  }
+
   .service_card {
     min-height: auto;
     width: 85%;
@@ -167,6 +204,37 @@
 }
 
 @media screen and (max-width: 362px) {
+
+  .form {
+    padding: 0 2em 3em 2em;
+}
+
+  .group-form-image {
+    grid-template-columns: 18em;
+  }
+
+   .group-password-inputs :nth-child(1) {
+    width: 13.6em;
+  }
+
+  .subtitle-form {
+    font-size: 0.8em;
+  }
+
+  .labels {
+    font-size: 0.75em;
+}
+
+  .title-form {
+    font-size: 1.2em;
+  }
+
+  .group-form-image__form img {
+    width: 14em;
+  }
+
+
+
   .email-input-login {
     width: 100%;
   }

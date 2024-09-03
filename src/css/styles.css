@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --color-primary: #101728;
-  --cor-clara-gradient: #1695FE;
-  --cor-escura-gradient: #2734C8;
+  --cor-clara-gradient: #1695fe;
+  --cor-escura-gradient: #2734c8;
 
-  --width-global: 1200px
+  --width-global: 1200px;
 }
 
 * {
@@ -38,7 +38,7 @@
 }
 
 .group-option-login {
-  animation: corGroupOption .8s ease 0s 1 normal forwards;
+  animation: corGroupOption 0.8s ease 0s 1 normal forwards;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -50,7 +50,7 @@
 }
 
 .option-login {
-  animation: subirOption .8s ease 0s 1 normal forwards;
+  animation: subirOption 0.8s ease 0s 1 normal forwards;
   background-color: white;
   width: 100%;
   height: 67%;
@@ -88,8 +88,8 @@
   width: 17em;
   padding: 1.3em;
   border-radius: 50px 0 0 50px;
-  border-left: 1px solid #101728 ;
-  border-top: 1px solid #101728 ;
+  border-left: 1px solid #101728;
+  border-top: 1px solid #101728;
   border-bottom: 1px solid #101728;
   border-right: none;
 }
@@ -106,14 +106,14 @@
 .button-enviar {
   background-color: white;
   border-radius: 0 50px 50px 0;
-  border-right: 1px solid #101728 ;
-  border-top: 1px solid #101728 ;
+  border-right: 1px solid #101728;
+  border-top: 1px solid #101728;
   border-bottom: 1px solid #101728;
   border-left: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .3em;
+  padding: 0.3em;
 }
 
 .button-enviar img {
@@ -122,7 +122,7 @@
 
 .rodape-option-login {
   border-top: 1px solid #101728;
-  padding-top: .6em;
+  padding-top: 0.6em;
   display: flex;
   justify-content: space-between;
 }
@@ -170,13 +170,13 @@
 }
 
 .btn {
-  padding: .65em 2em;
+  padding: 0.65em 2em;
   background-color: white;
   text-decoration: none;
   color: black;
   border-radius: 60px;
   margin-left: 2em;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 strong {
@@ -217,7 +217,7 @@ strong {
   position: relative;
   text-decoration: none;
   color: white;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   padding-bottom: 3px;
 }
 
@@ -272,7 +272,11 @@ strong {
 }
 
 .service_card {
-  background-image: linear-gradient(to left, var(--cor-clara-gradient), var(--cor-escura-gradient));
+  background-image: linear-gradient(
+    to left,
+    var(--cor-clara-gradient),
+    var(--cor-escura-gradient)
+  );
   padding: 10px;
   border-radius: 20px;
   display: flex;
@@ -284,7 +288,7 @@ strong {
 }
 
 .num {
-  padding: .2em 1em;
+  padding: 0.2em 1em;
   background-color: white;
   border-radius: 25px;
   color: black;
@@ -306,7 +310,7 @@ strong {
 }
 
 .text-card {
-  font-size: .93em;
+  font-size: 0.93em;
 }
 
 /* ESTILOS QUEM SOMOS / SOBRE NÓS / SUPORTE */
@@ -327,7 +331,11 @@ strong {
 
 .header__title {
   font-size: 3em;
-  background-image: linear-gradient(to left, var(--cor-clara-gradient), var(--cor-escura-gradient));
+  background-image: linear-gradient(
+    to left,
+    var(--cor-clara-gradient),
+    var(--cor-escura-gradient)
+  );
   padding: 0 1.5em;
   border-radius: 30px;
   text-align: center;
@@ -352,4 +360,167 @@ strong {
   display: flex;
   align-items: center;
   border-top: 2px solid white;
+}
+
+/* CADASTRO */
+
+.form {
+  padding: 0 3em 4.5em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.container-cadastro {
+  min-height: 100vh;
+  background-color: #0e1422;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.group-form-image__form img {
+  padding: 1em;
+  padding-bottom: 1.5em;
+  width: 17em;
+}
+
+.group-form-image {
+  display: grid;
+  grid-template-columns: 1fr 31em;
+  grid-template-rows: 1fr;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(1, 0, 16, 0.462);
+}
+
+.group-inputs-form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group-form-image__image {
+  background-image: url("../image/imagem.png");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.group-password-inputs {
+  display: flex;
+}
+
+.group-inputs-form-cadastro :nth-child(4) {
+  background-image: linear-gradient(
+    to left,
+    var(--cor-clara-gradient),
+    var(--cor-escura-gradient)
+  );
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 0.98em;
+  width: 100%;
+  cursor: pointer;
+}
+
+.group-password-inputs :nth-child(1) {
+  width: 18em;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.group-password-inputs :nth-child(2) {
+  background-color: var(--color-primary);
+  color: white;
+  width: 3em;
+  border-radius: 0 5px 5px 0;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+}
+
+.group-password-inputs :nth-child(2) i {
+  border: none;
+  font-size: 1.5em;
+}
+
+.group-inputs-form-cadastro input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.6em;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: white;
+  outline: none;
+  font-weight: 300;
+}
+
+.group-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labels {
+  color: white;
+  position: absolute;
+  left: 10px;
+  padding: 0 6px;
+  font-size: 0.8em;
+  background-color: var(--color-primary);
+  transition: transform 1s ease;
+  z-index: 0;
+  /* cursor: text; */
+}
+
+/* .group-inputs-form-cadastro input:focus + label {
+  animation: labelInput .3s ease-in-out 0s 1 normal forwards;
+} */
+
+@keyframes labelInput {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+
+.group-titles-form-cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-form {
+  font-size: 1.55em;
+}
+
+.text-form {
+  font-size: 0.8em;
+}
+
+.text-form,
+.text-form a {
+  text-align: center;
+  color: white;
+}
+
+.subtitle-form {
+  font-size: 0.95em;
+  font-weight: 300;
 }
