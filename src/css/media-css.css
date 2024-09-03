@@ -21,12 +21,12 @@
     text-align: center;
   }
 
-  .group-form-image {
-    grid-template-columns: 1fr 23em;
+  .btnCadastro {
+    margin-bottom: 1em;
   }
 
-  .header {
-    padding: 0;
+  .group-form-image {
+    grid-template-columns: 1fr 23em;
   }
 
   .groupCards_header_service {
@@ -46,15 +46,42 @@
 
   .list-menus {
     display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101728;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+  .list-menus li {
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .list-menus li:hover {
+    background-color: #19233c;
+  }
+
+  .list-menus li a {
+    font-size: 1.3em;
   }
 
   .group-menu {
+    cursor: pointer;
     display: grid;
+  }
+
+  .item-menu:hover::before {
+    display: none;
   }
 
   .header {
     align-items: center;
-    padding-bottom: 1em;
   }
 
   .title {
@@ -83,7 +110,7 @@
 @media screen and (max-width: 682px) {
   .group-form-image {
     grid-template-columns: 1fr 18em;
-}
+  }
 
   .texts-option-login {
     display: grid;
@@ -95,6 +122,7 @@
     align-items: center;
     padding-top: 0;
     width: 100%;
+    justify-content: center;
   }
 
   .option-login {
@@ -116,13 +144,12 @@
   }
 }
 
-@media screen and (max-width: 632px) {    
-
+@media screen and (max-width: 632px) {
   .group-form-image {
-  grid-template-columns: none;
-  width: 100%;
-  margin: 2em;
-}
+    grid-template-columns: none;
+    width: 100%;
+    margin: 2em;
+  }
 
   .header__title {
     font-size: 2.5em;
@@ -151,7 +178,7 @@
     width: 100%;
     margin: 1em;
     grid-template-columns: none;
-}
+  }
 
   .title-form {
     font-size: 1.45em;
@@ -213,7 +240,6 @@
 }
 
 @media screen and (max-width: 362px) {
-
   .form {
     padding: 0 2em 3em 2em;
   }
@@ -222,14 +248,13 @@
     grid-template-columns: 18em;
   }
 
-
   .subtitle-form {
     font-size: 0.8em;
   }
 
   .labels {
     font-size: 0.75em;
-}
+  }
 
   .title-form {
     font-size: 1.2em;
@@ -238,8 +263,6 @@
   .group-form-image__form img {
     width: 14em;
   }
-
-
 
   .email-input-login {
     width: 100%;

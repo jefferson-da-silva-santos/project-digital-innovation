@@ -162,6 +162,7 @@
   display: none;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 6px;
+  z-index: 1;
 }
 
 .linha {
@@ -499,8 +500,6 @@ strong {
     transform: translateY(-20px);
   }
 }
-
-
 
 .group-titles-form-cadastro {
   display: flex;
