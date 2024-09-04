@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --color-primary: #101728;
@@ -13,6 +14,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-primary);
 }
 
 /* OPTION */
@@ -496,12 +501,8 @@ strong {
   background-color: var(--color-primary);
   transition: transform 1s ease;
   z-index: 0;
-  /* cursor: text; */
 }
 
-/* .group-inputs-form-cadastro input:focus + label {
-  animation: labelInput .3s ease-in-out 0s 1 normal forwards;
-} */
 
 @keyframes labelInput {
   0% {
@@ -534,4 +535,72 @@ strong {
 .subtitle-form {
   font-size: 0.95em;
   font-weight: 300;
+}
+
+
+/* ESTILOS INICIO */
+
+.container-inicio {
+  background-color: var(--color-primary);
+  min-height: 100vh;
+  max-width: var(--width-global);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6em 1fr;
+  margin: auto;
+}
+
+.header-inicio {
+  display: flex;
+  align-items: center;
+}
+
+.header-inicio img {
+  max-width: 15em;
+}
+
+.main-inicio {
+  display: flex;
+  padding: 1em;
+  /* overflow: hidden; */
+}
+
+.main-inicio__section {
+  width: 100%;
+  background-image: linear-gradient(to right, var(--color-primary), #2A3C86);
+  color: white;
+  text-align: center;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.main-inicio__section__title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  height: 1em;
+}
+
+.main-inicio__section__text {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: auto;
+  width: 27em;
+  margin-top: 2em;
+}
+
+.user-image {
+  font-size: 6em;
+  color: white;
+  height: 127px;
+}
+
+.main-inicio__section__user {
+  display: flex;
+  flex-direction: column;
 }
