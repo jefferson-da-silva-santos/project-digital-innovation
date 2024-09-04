@@ -24,9 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.item-menu').forEach(element => {
     element.addEventListener('click', () => {
-      closeMenu(listMenu);
-    })
-  })
+      if (window.innerWidth < 890) {
+        closeMenu(listMenu); 
+      }
+    });
+  });
 
 });
 
