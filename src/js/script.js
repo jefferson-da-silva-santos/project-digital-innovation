@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.group-option-login').style.display = 'flex';
   });
 
-  document.querySelector('.group-option-login').addEventListener('click', () => {
+  document.querySelector('.close-login').addEventListener('click', () => {
     document.body.style.overflow = 'auto';
     document.querySelector('.group-option-login').style.display = 'none';
   });

@@ -17,6 +17,17 @@
 
 /* OPTION */
 
+.close-login {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  font-size: 2em;
+  color: var(--color-primary);
+  margin-right: 6px;
+}
+
 @keyframes corGroupOption {
   0% {
     background-color: transparent;
