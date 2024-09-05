@@ -376,6 +376,7 @@ strong {
 
 /* CADASTRO */
 
+
 .form {
   padding: 0 3em 4.5em 3em;
   display: flex;
@@ -534,4 +535,11 @@ strong {
 .subtitle-form {
   font-size: 0.95em;
   font-weight: 300;
+}
+
+
+/* LOGIN */
+
+.group-input-1 {
+  display: none;
 }
